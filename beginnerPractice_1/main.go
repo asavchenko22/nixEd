@@ -30,25 +30,6 @@ func testIMR(value ...float64) float64 {
 	// return total / float64(len(value))
 }
 
-// func printInt(a int) {
-// 	for i := 0; i <= 100; i++ {
-// 		result := strconv.Itoa(a)
-// 		switch a % 3 {
-// 		case 0:
-// 			result = "fizz"
-// 		}
-// 		switch a % 5 {
-// 		case 0:
-// 			result = "buzz"
-// 		}
-// 		if (a%3 == 0) && (a%5 == 0) {
-// 			result = "fizzBuzz"
-// 		}
-// 		fmt.Println(result)
-// 		a += 1
-// 	}
-// }
-
 func main() {
 	fmt.Println("Hello, NIX Education")
 	fmt.Println(testIMR(3.0, 3.0, 3.0))
