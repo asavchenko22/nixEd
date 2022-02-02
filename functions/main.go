@@ -24,17 +24,10 @@ func main() {
 }
 
 func fib(i int) int {
-	n := 0
-	switch i {
-	case 0:
-		n = 0
-	case 1:
-		n = 1
-	}
 	if i > 1 {
-		n = fib(i-1) + fib(i-2)
+		i = fib(i-1) + fib(i-2)
 	}
-	return n
+	return i
 }
 
 func makeOddGenerator() func() int {
