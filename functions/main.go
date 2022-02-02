@@ -13,14 +13,14 @@ func main() {
 	fmt.Println(findGreatNumber())
 
 	nextOdd := makeOddGenerator()
-	fmt.Println(nextOdd())
-	fmt.Println(nextOdd())
-	fmt.Println(nextOdd())
+	fmt.Println("nextOdd : ", nextOdd())
+	fmt.Println("nextOdd : ", nextOdd())
+	fmt.Println("nextOdd : ", nextOdd())
 
 	// Последовательность чисел Фибоначчи определяется как fib(0) = 0, fib(1) = 1,
 	// fib(n) = fib(n-1) + fib(n-2). Напишите рекурсивную функцию, находящую fib(n).
 
-	fmt.Println("fib(4) = ", fib(4))
+	fmt.Println("fib(12) = ", fib(12))
 }
 
 func fib(i int) int {
