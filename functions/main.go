@@ -20,12 +20,39 @@ func main() {
 	// Последовательность чисел Фибоначчи определяется как fib(0) = 0, fib(1) = 1,
 	// fib(n) = fib(n-1) + fib(n-2). Напишите рекурсивную функцию, находящую fib(n).
 
-	fmt.Println("fib(12) = ", fib(12))
+	fmt.Println("fib(7) = ", fib(5, true))
 }
 
-func fib(i int) int {
+func fib(i int, print bool) int {
+	if print {
+		n := 0
+		nPrev := 0
+		nPrevPrev := 0
+		for j := 0; j <= i; j++ {
+			switch j {
+			case 0:
+				fmt.Println(n)
+				nPrev++
+				nPrevPrev++
+			case 1:
+				n = nPrev
+				fmt.Println(n)
+			case 2:
+				fmt.Println(n)
+				n = nPrev + nPrevPrev
+			default:
+				fmt.Println(n)
+				nPrevPrev = nPrev
+				nPrev = n
+				n = nPrevPrev + nPrev
+
+			}
+		}
+
+	}
+	print = false
 	if i > 1 {
-		i = fib(i-1) + fib(i-2)
+		i = fib(i-1, print) + fib(i-2, print)
 	}
 	return i
 }
