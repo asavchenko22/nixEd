@@ -22,3 +22,5 @@ func swap(i *int, i2 *int) {
 	*i2 = tmp
 	fmt.Println("addresses ", i, i2)
 }
+
+//  and a few more test comments
