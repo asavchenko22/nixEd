@@ -13,6 +13,18 @@ func main() {
 	fmt.Println("initial values ", x, y)
 	swap(&x, &y)
 	fmt.Println("changed values ", x, y)
+
+	valueReplacement(&x, &y)
+
+	fmt.Println(x, y)
+
+	var z = 1.5
+	fmt.Println("square z = ", square(&z))
+}
+
+func valueReplacement(x *int, y *int) {
+	*x = 33
+	*y = 25
 }
 
 func swap(i *int, i2 *int) {
@@ -23,4 +35,7 @@ func swap(i *int, i2 *int) {
 	fmt.Println("addresses ", i, i2)
 }
 
-//  and a few more test comments
+func square(z *float64) float64 {
+	*z = *z * *z
+	return *z
+}
