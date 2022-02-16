@@ -28,10 +28,9 @@ func valueReplacement(x *int, y *int) {
 }
 
 func swap(i *int, i2 *int) {
-	tmp := *i
-	fmt.Println("tmp = ", tmp)
-	*i = *i2
-	*i2 = tmp
+	//tmp := *i
+	//fmt.Println("tmp = ", tmp)
+	*i, *i2 = *i2, *i // the best solution in go :)
 	fmt.Println("addresses ", i, i2)
 }
 
