@@ -75,6 +75,6 @@ func main() {
 	r := Rect{width: 3, height: 4, name: "rect"}
 	c := Circle{radius: 5, diameter: 5 * 2, name: "circle"}
 	calculation(&r, &c)
-} 
+}
 
-//       git tested
+//       git retested
