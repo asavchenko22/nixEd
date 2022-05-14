@@ -76,4 +76,5 @@ func main() {
 	c := Circle{radius: 5, diameter: 5 * 2, name: "circle"}
 	calculation(&r, &c)
 } 
-/       git tested
+
+//       git tested
